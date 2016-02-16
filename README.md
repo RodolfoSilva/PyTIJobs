@@ -10,7 +10,7 @@ Para que o script funcione é necessário ter instaladas as seguintes libs
 
 -----------------------------------------------------------------------------------------------------------------------
 #Uso
-`./pytijobs.py`
+`./main.py`
 
 Entre com o nome da cidade
 </br>Em seguida o estado
