@@ -1,3 +1,6 @@
+import textwrap
+
+
 class Job(object):
     """
     Class com os dados da vaga.
@@ -8,11 +11,11 @@ class Job(object):
         self.descricao = descricao
 
     def __str__(self):
-        return '''
-Vaga: {titulo}
-Link: {link}
---------------------------------------------------'''\
-                .format(titulo=self.titulo, link=self.link)
+        return textwrap.dedent('''
+                Vaga: {titulo}
+                Link: {link}
+                --------------------------------------------------\
+                ''').format(titulo=self.titulo, link=self.link)
 
 
 class Jobs:
